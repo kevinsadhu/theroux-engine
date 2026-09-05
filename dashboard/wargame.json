@@ -1,0 +1,3648 @@
+{
+ "params": {
+  "n_speakers": 14,
+  "baseline_n": 6,
+  "constrained_n": 3,
+  "heterogeneity": 0.9,
+  "p_null": 0.3,
+  "theta_scale": 0.55,
+  "constraint_base": 0.15,
+  "dose_response": 0.85,
+  "adoption": 0.0,
+  "coaching_skill": 0.75,
+  "kappa": 0.6,
+  "delta": 0.45,
+  "outcome_beta": 15.0,
+  "outcome_noise": 4.2,
+  "p_shock": 0.2
+ },
+ "coachability": {
+  "hedging": 0.85,
+  "confidence_language": 0.8,
+  "pronoun_distancing": 0.6,
+  "topic_deflection": 0.55,
+  "specificity_avoidance": 0.15,
+  "surprisal_z": 0.1
+ },
+ "adoption": [
+  {
+   "adoption": 0.0,
+   "rho_held": 0.4348,
+   "rho_held_sd": 0.1008,
+   "auc_move": 0.5447,
+   "mean_register": 1.0,
+   "mean_theta_held": 0.1446,
+   "n_reps": 10
+  },
+  {
+   "adoption": 0.25,
+   "rho_held": 0.3365,
+   "rho_held_sd": 0.1794,
+   "auc_move": 0.5308,
+   "mean_register": 0.3527,
+   "mean_theta_held": 0.1663,
+   "n_reps": 10
+  },
+  {
+   "adoption": 0.5,
+   "rho_held": 0.2967,
+   "rho_held_sd": 0.1413,
+   "auc_move": 0.5138,
+   "mean_register": 0.2297,
+   "mean_theta_held": 0.1702,
+   "n_reps": 10
+  },
+  {
+   "adoption": 0.75,
+   "rho_held": 0.3336,
+   "rho_held_sd": 0.1128,
+   "auc_move": 0.4988,
+   "mean_register": 0.1684,
+   "mean_theta_held": 0.1734,
+   "n_reps": 10
+  },
+  {
+   "adoption": 1.0,
+   "rho_held": 0.2669,
+   "rho_held_sd": 0.1792,
+   "auc_move": 0.5303,
+   "mean_register": 0.1348,
+   "mean_theta_held": 0.176,
+   "n_reps": 10
+  }
+ ],
+ "survival": [
+  {
+   "feature": "surprisal_z",
+   "coachability": 0.1,
+   "rho_naive": 0.1538,
+   "rho_adapted": 0.4237,
+   "retained": 2.7553,
+   "verdict": "gains \u2014 keys on the refusal register"
+  },
+  {
+   "feature": "pronoun_distancing",
+   "coachability": 0.6,
+   "rho_naive": 0.269,
+   "rho_adapted": 0.2661,
+   "retained": 0.9893,
+   "verdict": "holds"
+  },
+  {
+   "feature": "specificity_avoidance",
+   "coachability": 0.15,
+   "rho_naive": 0.5374,
+   "rho_adapted": 0.3446,
+   "retained": 0.6413,
+   "verdict": "degrades"
+  },
+  {
+   "feature": "confidence_language",
+   "coachability": 0.8,
+   "rho_naive": 0.2735,
+   "rho_adapted": 0.1597,
+   "retained": 0.5841,
+   "verdict": "degrades"
+  },
+  {
+   "feature": "topic_deflection",
+   "coachability": 0.55,
+   "rho_naive": 0.3579,
+   "rho_adapted": 0.1604,
+   "retained": 0.4481,
+   "verdict": "collapses"
+  },
+  {
+   "feature": "hedging",
+   "coachability": 0.85,
+   "rho_naive": 0.3746,
+   "rho_adapted": 0.1228,
+   "retained": 0.3279,
+   "verdict": "collapses"
+  }
+ ],
+ "dose_predicted": [
+  {
+   "days_lo": 0,
+   "days_hi": 5,
+   "mean_divergence": 0.1967,
+   "n": 38
+  },
+  {
+   "days_lo": 5,
+   "days_hi": 10,
+   "mean_divergence": 0.3183,
+   "n": 60
+  },
+  {
+   "days_lo": 10,
+   "days_hi": 15,
+   "mean_divergence": 0.1498,
+   "n": 68
+  },
+  {
+   "days_lo": 15,
+   "days_hi": 20,
+   "mean_divergence": 0.0799,
+   "n": 72
+  },
+  {
+   "days_lo": 20,
+   "days_hi": 25,
+   "mean_divergence": -0.0554,
+   "n": 64
+  },
+  {
+   "days_lo": 25,
+   "days_hi": 30,
+   "mean_divergence": -0.3596,
+   "n": 34
+  }
+ ],
+ "dose_measured": {
+  "status": "ok",
+  "n": 42,
+  "n_speakers": 15,
+  "rho_pooled": 0.2621,
+  "p_pooled": 0.12559,
+  "median_within_speaker_rho": 0.3,
+  "p_within": 0.31692,
+  "n_speakers_with_gradient": 10,
+  "frac_positive": 0.6,
+  "n_perm": 4000,
+  "blocked": true,
+  "significant_at_05": false,
+  "headline_statistic": "median within-speaker rho(divergence, -days_to_disclosure)",
+  "direction": "divergence rises as disclosure approaches"
+ },
+ "design": [
+  {
+   "n_speakers": 8,
+   "baseline_n": 3,
+   "rho_held": 0.4133,
+   "median_p": 0.2125,
+   "power_at_05": 0.429,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 8,
+   "baseline_n": 6,
+   "rho_held": 0.5487,
+   "median_p": 0.0583,
+   "power_at_05": 0.357,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 8,
+   "baseline_n": 10,
+   "rho_held": 0.5542,
+   "median_p": 0.056,
+   "power_at_05": 0.429,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 14,
+   "baseline_n": 3,
+   "rho_held": 0.4477,
+   "median_p": 0.074,
+   "power_at_05": 0.429,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 14,
+   "baseline_n": 6,
+   "rho_held": 0.5512,
+   "median_p": 0.0253,
+   "power_at_05": 0.714,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 14,
+   "baseline_n": 10,
+   "rho_held": 0.5437,
+   "median_p": 0.0167,
+   "power_at_05": 0.643,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 22,
+   "baseline_n": 3,
+   "rho_held": 0.4242,
+   "median_p": 0.0147,
+   "power_at_05": 0.714,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 22,
+   "baseline_n": 6,
+   "rho_held": 0.5387,
+   "median_p": 0.0027,
+   "power_at_05": 0.857,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 22,
+   "baseline_n": 10,
+   "rho_held": 0.5641,
+   "median_p": 0.005,
+   "power_at_05": 0.929,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 34,
+   "baseline_n": 3,
+   "rho_held": 0.3862,
+   "median_p": 0.01,
+   "power_at_05": 0.714,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 34,
+   "baseline_n": 6,
+   "rho_held": 0.5565,
+   "median_p": 0.0017,
+   "power_at_05": 0.929,
+   "n_reps": 14
+  },
+  {
+   "n_speakers": 34,
+   "baseline_n": 10,
+   "rho_held": 0.5166,
+   "median_p": 0.0017,
+   "power_at_05": 0.857,
+   "n_reps": 14
+  }
+ ],
+ "posteriors": {
+  "kestrel-c1": {
+   "n_matched": 40,
+   "match_quality": 1.9075,
+   "theta_held": {
+    "mean": 0.2178,
+    "q10": 0.0,
+    "q50": 0.2125,
+    "q90": 0.4097
+   },
+   "p_nothing_withheld": 0.1277,
+   "move": {
+    "q10": -8.76,
+    "q50": -0.53,
+    "q90": 5.12
+   },
+   "p_material_move": 0.2381,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.125
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.2
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.175
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.075
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "corveth-c2": {
+   "n_matched": 40,
+   "match_quality": 2.7565,
+   "theta_held": {
+    "mean": 0.3762,
+    "q10": 0.11,
+    "q50": 0.4025,
+    "q90": 0.5868
+   },
+   "p_nothing_withheld": 0.0522,
+   "move": {
+    "q10": -14.77,
+    "q50": -1.95,
+    "q90": 10.8
+   },
+   "p_material_move": 0.622,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.1
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.05
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.05
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.2
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.1
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.1
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.1
+    }
+   ]
+  },
+  "nortrail-c1": {
+   "n_matched": 40,
+   "match_quality": 1.4274,
+   "theta_held": {
+    "mean": 0.4255,
+    "q10": 0.2289,
+    "q50": 0.463,
+    "q90": 0.5964
+   },
+   "p_nothing_withheld": 0.0,
+   "move": {
+    "q10": -12.97,
+    "q50": -1.66,
+    "q90": 11.4
+   },
+   "p_material_move": 0.5453,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.0
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.0
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.025
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.15
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.2
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.15
+    }
+   ]
+  },
+  "corveth-c1": {
+   "n_matched": 40,
+   "match_quality": 1.527,
+   "theta_held": {
+    "mean": 0.411,
+    "q10": 0.1283,
+    "q50": 0.4261,
+    "q90": 0.5964
+   },
+   "p_nothing_withheld": 0.0154,
+   "move": {
+    "q10": -14.68,
+    "q50": -1.76,
+    "q90": 10.56
+   },
+   "p_material_move": 0.5372,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.025
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.025
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.075
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.15
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.175
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.15
+    }
+   ]
+  },
+  "nortrail-c2": {
+   "n_matched": 40,
+   "match_quality": 1.2751,
+   "theta_held": {
+    "mean": 0.2775,
+    "q10": 0.0,
+    "q50": 0.2655,
+    "q90": 0.4932
+   },
+   "p_nothing_withheld": 0.138,
+   "move": {
+    "q10": -11.01,
+    "q50": -4.71,
+    "q90": 2.38
+   },
+   "p_material_move": 0.4515,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.125
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.125
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.15
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "vantree-c1": {
+   "n_matched": 40,
+   "match_quality": 1.5679,
+   "theta_held": {
+    "mean": 0.3005,
+    "q10": 0.1143,
+    "q50": 0.3056,
+    "q90": 0.4873
+   },
+   "p_nothing_withheld": 0.0345,
+   "move": {
+    "q10": -12.44,
+    "q50": 0.86,
+    "q90": 8.4
+   },
+   "p_material_move": 0.4425,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.05
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.025
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.15
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.125
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.175
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.15
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.075
+    }
+   ]
+  },
+  "ardent-c1": {
+   "n_matched": 40,
+   "match_quality": 1.6845,
+   "theta_held": {
+    "mean": 0.2619,
+    "q10": 0.0683,
+    "q50": 0.237,
+    "q90": 0.481
+   },
+   "p_nothing_withheld": 0.0754,
+   "move": {
+    "q10": -9.9,
+    "q50": -0.84,
+    "q90": 5.34
+   },
+   "p_material_move": 0.2973,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.125
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.15
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.125
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.1
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "sable-c1": {
+   "n_matched": 40,
+   "match_quality": 1.8964,
+   "theta_held": {
+    "mean": 0.3047,
+    "q10": 0.1062,
+    "q50": 0.3086,
+    "q90": 0.5214
+   },
+   "p_nothing_withheld": 0.0223,
+   "move": {
+    "q10": -10.34,
+    "q50": -0.34,
+    "q90": 6.83
+   },
+   "p_material_move": 0.3577,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.075
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.15
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.025
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.2
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.1
+    }
+   ]
+  },
+  "kestrel-c0": {
+   "n_matched": 40,
+   "match_quality": 1.5993,
+   "theta_held": {
+    "mean": 0.2622,
+    "q10": 0.105,
+    "q50": 0.2344,
+    "q90": 0.4323
+   },
+   "p_nothing_withheld": 0.0295,
+   "move": {
+    "q10": -11.88,
+    "q50": 0.95,
+    "q90": 5.94
+   },
+   "p_material_move": 0.3349,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.075
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.1
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.15
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.2
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.2
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "corveth-c3": {
+   "n_matched": 40,
+   "match_quality": 1.3069,
+   "theta_held": {
+    "mean": 0.3705,
+    "q10": 0.1145,
+    "q50": 0.4021,
+    "q90": 0.5964
+   },
+   "p_nothing_withheld": 0.0153,
+   "move": {
+    "q10": -9.8,
+    "q50": -1.45,
+    "q90": 9.97
+   },
+   "p_material_move": 0.5775,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.025
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.1
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.1
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.075
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.1
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.15
+    }
+   ]
+  },
+  "brightmoor-c2": {
+   "n_matched": 40,
+   "match_quality": 2.2914,
+   "theta_held": {
+    "mean": 0.1569,
+    "q10": 0.0,
+    "q50": 0.1646,
+    "q90": 0.3031
+   },
+   "p_nothing_withheld": 0.288,
+   "move": {
+    "q10": -8.88,
+    "q50": -1.24,
+    "q90": 4.89
+   },
+   "p_material_move": 0.309,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.325
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.125
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "tessaly-c2": {
+   "n_matched": 40,
+   "match_quality": 1.6697,
+   "theta_held": {
+    "mean": 0.194,
+    "q10": 0.0,
+    "q50": 0.2079,
+    "q90": 0.3629
+   },
+   "p_nothing_withheld": 0.2118,
+   "move": {
+    "q10": -8.8,
+    "q50": -1.4,
+    "q90": 5.63
+   },
+   "p_material_move": 0.2848,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.25
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.15
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.2
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.15
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "corveth-c0": {
+   "n_matched": 40,
+   "match_quality": 1.7364,
+   "theta_held": {
+    "mean": 0.3191,
+    "q10": 0.03,
+    "q50": 0.3536,
+    "q90": 0.5308
+   },
+   "p_nothing_withheld": 0.0885,
+   "move": {
+    "q10": -10.3,
+    "q50": -4.0,
+    "q90": 3.54
+   },
+   "p_material_move": 0.4851,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.15
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.025
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.125
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.15
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.075
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "braemar-c1": {
+   "n_matched": 40,
+   "match_quality": 1.3172,
+   "theta_held": {
+    "mean": 0.2709,
+    "q10": 0.0846,
+    "q50": 0.2346,
+    "q90": 0.4787
+   },
+   "p_nothing_withheld": 0.0196,
+   "move": {
+    "q10": -10.25,
+    "q50": -0.78,
+    "q90": 4.33
+   },
+   "p_material_move": 0.3026,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.1
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.15
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.15
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.1
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "calderon-c2": {
+   "n_matched": 40,
+   "match_quality": 2.1204,
+   "theta_held": {
+    "mean": 0.2844,
+    "q10": 0.1079,
+    "q50": 0.2706,
+    "q90": 0.498
+   },
+   "p_nothing_withheld": 0.0312,
+   "move": {
+    "q10": -10.47,
+    "q50": -0.68,
+    "q90": 6.81
+   },
+   "p_material_move": 0.3433,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.05
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.175
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.2
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.05
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.175
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "nortrail-c0": {
+   "n_matched": 40,
+   "match_quality": 1.8334,
+   "theta_held": {
+    "mean": 0.2654,
+    "q10": 0.0542,
+    "q50": 0.2302,
+    "q90": 0.4784
+   },
+   "p_nothing_withheld": 0.0377,
+   "move": {
+    "q10": -9.8,
+    "q50": -1.84,
+    "q90": 5.62
+   },
+   "p_material_move": 0.4946,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.1
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.025
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.175
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.175
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.125
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.075
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.075
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "riverton-c1": {
+   "n_matched": 40,
+   "match_quality": 1.8416,
+   "theta_held": {
+    "mean": 0.2465,
+    "q10": 0.078,
+    "q50": 0.2276,
+    "q90": 0.4011
+   },
+   "p_nothing_withheld": 0.0686,
+   "move": {
+    "q10": -21.14,
+    "q50": -1.44,
+    "q90": 5.01
+   },
+   "p_material_move": 0.3496,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.15
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.1
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.175
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.15
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.1
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "riverton-c2": {
+   "n_matched": 40,
+   "match_quality": 1.1979,
+   "theta_held": {
+    "mean": 0.1203,
+    "q10": 0.0,
+    "q50": 0.0666,
+    "q90": 0.2647
+   },
+   "p_nothing_withheld": 0.4048,
+   "move": {
+    "q10": -11.01,
+    "q50": -2.92,
+    "q90": 5.45
+   },
+   "p_material_move": 0.3776,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.4
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.125
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.05
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.2
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "occitan-c2": {
+   "n_matched": 40,
+   "match_quality": 1.037,
+   "theta_held": {
+    "mean": 0.1982,
+    "q10": 0.0,
+    "q50": 0.1952,
+    "q90": 0.4698
+   },
+   "p_nothing_withheld": 0.2517,
+   "move": {
+    "q10": -10.01,
+    "q50": -3.2,
+    "q90": 3.69
+   },
+   "p_material_move": 0.3858,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.275
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.15
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.2
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "vantree-c0": {
+   "n_matched": 40,
+   "match_quality": 1.6072,
+   "theta_held": {
+    "mean": 0.1328,
+    "q10": 0.0,
+    "q50": 0.1395,
+    "q90": 0.2966
+   },
+   "p_nothing_withheld": 0.29,
+   "move": {
+    "q10": -8.51,
+    "q50": -1.61,
+    "q90": 5.6
+   },
+   "p_material_move": 0.2268,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.275
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.125
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.175
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "pallas-c1": {
+   "n_matched": 40,
+   "match_quality": 1.2507,
+   "theta_held": {
+    "mean": 0.3415,
+    "q10": 0.0,
+    "q50": 0.3682,
+    "q90": 0.583
+   },
+   "p_nothing_withheld": 0.1144,
+   "move": {
+    "q10": -10.51,
+    "q50": -5.17,
+    "q90": 5.9
+   },
+   "p_material_move": 0.5553,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.175
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.0
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.05
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.125
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.1
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.1
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.075
+    }
+   ]
+  },
+  "ardent-c0": {
+   "n_matched": 40,
+   "match_quality": 1.4577,
+   "theta_held": {
+    "mean": 0.2732,
+    "q10": 0.0927,
+    "q50": 0.2241,
+    "q90": 0.5301
+   },
+   "p_nothing_withheld": 0.0895,
+   "move": {
+    "q10": -14.44,
+    "q50": -1.87,
+    "q90": 7.27
+   },
+   "p_material_move": 0.4585,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.175
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.2
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.1
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.075
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.05
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "nordvik-c0": {
+   "n_matched": 40,
+   "match_quality": 2.7136,
+   "theta_held": {
+    "mean": 0.3155,
+    "q10": 0.103,
+    "q50": 0.3734,
+    "q90": 0.5237
+   },
+   "p_nothing_withheld": 0.028,
+   "move": {
+    "q10": -10.39,
+    "q50": -1.2,
+    "q90": 6.78
+   },
+   "p_material_move": 0.3985,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.05
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.15
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.0
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.225
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.1
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.15
+    }
+   ]
+  },
+  "riverton-c0": {
+   "n_matched": 40,
+   "match_quality": 1.6647,
+   "theta_held": {
+    "mean": 0.1436,
+    "q10": 0.0,
+    "q50": 0.1135,
+    "q90": 0.3161
+   },
+   "p_nothing_withheld": 0.3032,
+   "move": {
+    "q10": -21.54,
+    "q50": -4.15,
+    "q90": 4.78
+   },
+   "p_material_move": 0.3132,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.35
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.175
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "calderon-c0": {
+   "n_matched": 40,
+   "match_quality": 3.8574,
+   "theta_held": {
+    "mean": 0.3358,
+    "q10": 0.107,
+    "q50": 0.3789,
+    "q90": 0.5582
+   },
+   "p_nothing_withheld": 0.0345,
+   "move": {
+    "q10": -10.72,
+    "q50": -1.67,
+    "q90": 14.93
+   },
+   "p_material_move": 0.4393,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.025
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.15
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.05
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.1
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.175
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.075
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.1
+    }
+   ]
+  },
+  "sable-c0": {
+   "n_matched": 40,
+   "match_quality": 1.6993,
+   "theta_held": {
+    "mean": 0.1312,
+    "q10": 0.0,
+    "q50": 0.082,
+    "q90": 0.3614
+   },
+   "p_nothing_withheld": 0.393,
+   "move": {
+    "q10": -8.95,
+    "q50": -0.52,
+    "q90": 5.74
+   },
+   "p_material_move": 0.3065,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.275
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.125
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "tessaly-c0": {
+   "n_matched": 40,
+   "match_quality": 1.2118,
+   "theta_held": {
+    "mean": 0.1004,
+    "q10": 0.0,
+    "q50": 0.0015,
+    "q90": 0.234
+   },
+   "p_nothing_withheld": 0.4913,
+   "move": {
+    "q10": -8.9,
+    "q50": -0.3,
+    "q90": 7.28
+   },
+   "p_material_move": 0.3446,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.45
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.125
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.125
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "occitan-c1": {
+   "n_matched": 40,
+   "match_quality": 1.2369,
+   "theta_held": {
+    "mean": 0.1266,
+    "q10": 0.0,
+    "q50": 0.0647,
+    "q90": 0.3925
+   },
+   "p_nothing_withheld": 0.3971,
+   "move": {
+    "q10": -8.93,
+    "q50": -0.43,
+    "q90": 6.04
+   },
+   "p_material_move": 0.3284,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.45
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.0
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.025
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.125
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.05
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "halden-c0": {
+   "n_matched": 40,
+   "match_quality": 1.5878,
+   "theta_held": {
+    "mean": 0.2938,
+    "q10": 0.0796,
+    "q50": 0.2942,
+    "q90": 0.5058
+   },
+   "p_nothing_withheld": 0.0369,
+   "move": {
+    "q10": -14.87,
+    "q50": -3.1,
+    "q90": 5.44
+   },
+   "p_material_move": 0.339,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.075
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.125
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.125
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.075
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.125
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.125
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.125
+    }
+   ]
+  },
+  "occitan-c0": {
+   "n_matched": 40,
+   "match_quality": 1.3464,
+   "theta_held": {
+    "mean": 0.2038,
+    "q10": 0.0,
+    "q50": 0.1809,
+    "q90": 0.4003
+   },
+   "p_nothing_withheld": 0.2213,
+   "move": {
+    "q10": -10.6,
+    "q50": -0.52,
+    "q90": 6.34
+   },
+   "p_material_move": 0.3772,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.225
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.125
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.125
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.075
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "calderon-c1": {
+   "n_matched": 40,
+   "match_quality": 1.3457,
+   "theta_held": {
+    "mean": 0.3171,
+    "q10": 0.0,
+    "q50": 0.301,
+    "q90": 0.5479
+   },
+   "p_nothing_withheld": 0.1437,
+   "move": {
+    "q10": -10.33,
+    "q50": -3.03,
+    "q90": 6.83
+   },
+   "p_material_move": 0.4711,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.175
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.025
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.05
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.1
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.075
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.1
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.075
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.1
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.075
+    }
+   ]
+  },
+  "tessaly-c1": {
+   "n_matched": 40,
+   "match_quality": 1.2595,
+   "theta_held": {
+    "mean": 0.0857,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.2342
+   },
+   "p_nothing_withheld": 0.5335,
+   "move": {
+    "q10": -11.48,
+    "q50": -0.3,
+    "q90": 6.62
+   },
+   "p_material_move": 0.321,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.475
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.05
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.15
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.125
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "pallas-c0": {
+   "n_matched": 40,
+   "match_quality": 1.5166,
+   "theta_held": {
+    "mean": 0.061,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.2032
+   },
+   "p_nothing_withheld": 0.5343,
+   "move": {
+    "q10": -6.56,
+    "q50": 0.5,
+    "q90": 7.09
+   },
+   "p_material_move": 0.2833,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.55
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.125
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.025
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "brightmoor-c1": {
+   "n_matched": 40,
+   "match_quality": 1.4782,
+   "theta_held": {
+    "mean": 0.0665,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.2223
+   },
+   "p_nothing_withheld": 0.5522,
+   "move": {
+    "q10": -7.61,
+    "q50": -0.21,
+    "q90": 5.89
+   },
+   "p_material_move": 0.2582,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.6
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.175
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.025
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.0
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "brightmoor-c0": {
+   "n_matched": 40,
+   "match_quality": 3.2017,
+   "theta_held": {
+    "mean": 0.1281,
+    "q10": 0.0,
+    "q50": 0.0818,
+    "q90": 0.3197
+   },
+   "p_nothing_withheld": 0.2827,
+   "move": {
+    "q10": -7.6,
+    "q50": -1.17,
+    "q90": 5.23
+   },
+   "p_material_move": 0.227,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.35
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.2
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.1
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.075
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.05
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.05
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "halden-c1": {
+   "n_matched": 40,
+   "match_quality": 1.5532,
+   "theta_held": {
+    "mean": 0.211,
+    "q10": 0.0,
+    "q50": 0.1953,
+    "q90": 0.4289
+   },
+   "p_nothing_withheld": 0.1947,
+   "move": {
+    "q10": -17.56,
+    "q50": -1.62,
+    "q90": 5.88
+   },
+   "p_material_move": 0.3786,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.2
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.1
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.05
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.25
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.05
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.1
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.05
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.05
+    }
+   ]
+  },
+  "pallas-c2": {
+   "n_matched": 40,
+   "match_quality": 1.5523,
+   "theta_held": {
+    "mean": 0.0452,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.1721
+   },
+   "p_nothing_withheld": 0.6127,
+   "move": {
+    "q10": -3.69,
+    "q50": 0.03,
+    "q90": 5.06
+   },
+   "p_material_move": 0.1397,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.7
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.0
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.025
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "ardent-c2": {
+   "n_matched": 40,
+   "match_quality": 1.4787,
+   "theta_held": {
+    "mean": 0.1152,
+    "q10": 0.0,
+    "q50": 0.0676,
+    "q90": 0.2649
+   },
+   "p_nothing_withheld": 0.2867,
+   "move": {
+    "q10": -7.5,
+    "q50": 0.14,
+    "q90": 2.98
+   },
+   "p_material_move": 0.1443,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.5
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.1
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.1
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.0
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.025
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.025
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.025
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.025
+    }
+   ]
+  },
+  "halden-c2": {
+   "n_matched": 40,
+   "match_quality": 1.3963,
+   "theta_held": {
+    "mean": 0.0411,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.1692
+   },
+   "p_nothing_withheld": 0.5354,
+   "move": {
+    "q10": -7.54,
+    "q50": 1.14,
+    "q90": 7.02
+   },
+   "p_material_move": 0.2953,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.675
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.0
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.05
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "tessaly-c3": {
+   "n_matched": 40,
+   "match_quality": 1.3185,
+   "theta_held": {
+    "mean": 0.0593,
+    "q10": 0.0,
+    "q50": 0.0025,
+    "q90": 0.1173
+   },
+   "p_nothing_withheld": 0.4927,
+   "move": {
+    "q10": -5.16,
+    "q50": 1.73,
+    "q90": 5.97
+   },
+   "p_material_move": 0.1497,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.55
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.15
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.075
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.1
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.05
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.0
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.025
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.05
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "braemar-c0": {
+   "n_matched": 40,
+   "match_quality": 1.5638,
+   "theta_held": {
+    "mean": 0.0327,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.1066
+   },
+   "p_nothing_withheld": 0.6402,
+   "move": {
+    "q10": -9.67,
+    "q50": -0.2,
+    "q90": 5.61
+   },
+   "p_material_move": 0.3111,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.75
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.05
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.075
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.025
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.0
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.025
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  },
+  "nordvik-c1": {
+   "n_matched": 40,
+   "match_quality": 2.1734,
+   "theta_held": {
+    "mean": 0.0555,
+    "q10": 0.0,
+    "q50": 0.0,
+    "q90": 0.2073
+   },
+   "p_nothing_withheld": 0.6078,
+   "move": {
+    "q10": -4.48,
+    "q50": 0.43,
+    "q90": 6.73
+   },
+   "p_material_move": 0.1763,
+   "conditional_on": "world.GameParams as shown; NOT an empirical probability",
+   "hist": [
+    {
+     "lo": 0.0,
+     "hi": 0.051,
+     "p": 0.6
+    },
+    {
+     "lo": 0.051,
+     "hi": 0.102,
+     "p": 0.075
+    },
+    {
+     "lo": 0.102,
+     "hi": 0.153,
+     "p": 0.025
+    },
+    {
+     "lo": 0.153,
+     "hi": 0.204,
+     "p": 0.125
+    },
+    {
+     "lo": 0.204,
+     "hi": 0.255,
+     "p": 0.15
+    },
+    {
+     "lo": 0.255,
+     "hi": 0.306,
+     "p": 0.025
+    },
+    {
+     "lo": 0.306,
+     "hi": 0.357,
+     "p": 0.0
+    },
+    {
+     "lo": 0.357,
+     "hi": 0.407,
+     "p": 0.0
+    },
+    {
+     "lo": 0.407,
+     "hi": 0.458,
+     "p": 0.0
+    },
+    {
+     "lo": 0.458,
+     "hi": 0.509,
+     "p": 0.0
+    },
+    {
+     "lo": 0.509,
+     "hi": 0.56,
+     "p": 0.0
+    },
+    {
+     "lo": 0.56,
+     "hi": 0.611,
+     "p": 0.0
+    }
+   ]
+  }
+ },
+ "reference_n": 588,
+ "disclaimer": "Every figure here except dose_measured is generated by theroux.world, a model we specified. It describes the implications of our assumptions, not evidence about the world.",
+ "archetype_labels": {
+  "naive_executive": "Naive executive",
+  "coached_executive": "Coached executive",
+  "legally_muzzled": "Legally muzzled",
+  "genuinely_uncertain": "Genuinely uncertain",
+  "career_official": "Career official",
+  "null": "Null speaker"
+ }
+}

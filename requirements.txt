@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.3
+
+# Optional — only for the LLM scorer (scorer.score_text_llm)
+# anthropic>=0.40.0

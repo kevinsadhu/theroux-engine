@@ -1,0 +1,17 @@
+{
+ "id": "fed-2026-01-30-waller",
+ "speaker": "Christopher J. Waller",
+ "org": "Federal Reserve Board",
+ "domain": "central_bank",
+ "event": "Statement by Governor Christopher J. Waller - Federal Reserve Board",
+ "event_type": "board_speech",
+ "date": "2026-01-30",
+ "window": "baseline",
+ "days_to_disclosure": 46,
+ "next_event": "2026-03-17",
+ "text": "January 30, 2026 Statement by Governor Christopher J. Waller Governor Christopher J. Waller Share I dissented at the most recent meeting of the Federal Open Market Committee (FOMC) after concluding that cutting the policy rate by 25 basis points was the appropriate stance of policy. Three cuts to the policy rate last year have moved it closer to a neutral setting but monetary policy is still restricting economic activity, and economic data make it clear to me further easing is needed. First, in contrast to the continued solid growth in economic activity, the labor market remains weak. Despite ticking down in its most recent reading, the unemployment rate has risen since the middle of last year. Payroll gains in 2025 were very weak. Compared to the prior ten-year average of about 1.9 million jobs created per year, payrolls increased just under 600,000 for 2025. And, last year's data will be revised downward soon to likely show that there was virtually no growth in payroll employment in 2025. Zero. Zip. Nada. Let this sink in for a moment\u2014zero job growth versus an average of almost 2 million for the 10 years prior to 2025. This does not remotely look like a healthy labor market. While lower labor supply was surely a factor, it also indicates considerable weakness in labor demand. Employers are reluctant to fire workers, but also very reluctant to hire. I have heard in multiple outreach meetings of planned layoffs in 2026. This indicates to me that there is considerable doubt about future employment growth and suggests that a substantial deterioration in the labor market is a significant risk. Second, though inflation is elevated from tariff effects, appropriate monetary policy is to \"look through\" these effects as long as inflation expectations are anchored, which they are. Inflation excluding tariff effects is running close to the FOMC's 2 percent target and on a path to sustainably reach that goal. With total inflation excluding tariff effects close to our target at just slightly above 2 percent and a weak labor market, the policy rate should be closer to neutral, which the median FOMC participant estimates is 3 percent, and not where we are\u201450 to 75 basis points above 3 percent. I favored reducing the policy rate to strengthen the labor market and guard against a deterioration that would be harder to address once it has begun. Last Update: January 30, 2026 Back to Top",
+ "synthetic": false,
+ "source_url": "https://www.federalreserve.gov/newsevents/speech/waller20260130a.htm",
+ "outcome_move_pct": null,
+ "outcome": null
+}

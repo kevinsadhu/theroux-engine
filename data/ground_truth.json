@@ -1,0 +1,122 @@
+[
+ {
+  "speaker": "D. Okonjo",
+  "org": "Vantree Systems",
+  "null_speaker": false,
+  "true_signal_strength": 0.28,
+  "n_baseline": 8,
+  "n_constrained": 2
+ },
+ {
+  "speaker": "M. Ferreira",
+  "org": "Halden Robotics",
+  "null_speaker": true,
+  "true_signal_strength": 0.0,
+  "n_baseline": 8,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "S. Ambrose",
+  "org": "Corveth Health",
+  "null_speaker": false,
+  "true_signal_strength": 0.529,
+  "n_baseline": 5,
+  "n_constrained": 4
+ },
+ {
+  "speaker": "T. Lindqvist",
+  "org": "Brightmoor Retail",
+  "null_speaker": false,
+  "true_signal_strength": 0.176,
+  "n_baseline": 6,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "R. Vasquez",
+  "org": "Nortrail Energy",
+  "null_speaker": false,
+  "true_signal_strength": 0.449,
+  "n_baseline": 5,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "A. Whitfield",
+  "org": "Calderon Software",
+  "null_speaker": false,
+  "true_signal_strength": 0.468,
+  "n_baseline": 7,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "K. Nakamura",
+  "org": "Kestrel Semiconductor",
+  "null_speaker": false,
+  "true_signal_strength": 0.339,
+  "n_baseline": 5,
+  "n_constrained": 2
+ },
+ {
+  "speaker": "L. Bergstr\u00f6m",
+  "org": "Ardent Logistics",
+  "null_speaker": false,
+  "true_signal_strength": 0.227,
+  "n_baseline": 5,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "P. Adeyemi",
+  "org": "Pallas Financial",
+  "null_speaker": false,
+  "true_signal_strength": 0.168,
+  "n_baseline": 7,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "J. Kova\u010d",
+  "org": "Riverton Materials",
+  "null_speaker": false,
+  "true_signal_strength": 0.191,
+  "n_baseline": 6,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "H. Castellanos",
+  "org": "Sable Networks",
+  "null_speaker": false,
+  "true_signal_strength": 0.149,
+  "n_baseline": 4,
+  "n_constrained": 2
+ },
+ {
+  "speaker": "N. Farouk",
+  "org": "Occitan Foods",
+  "null_speaker": true,
+  "true_signal_strength": 0.0,
+  "n_baseline": 8,
+  "n_constrained": 3
+ },
+ {
+  "speaker": "E. Thorsen",
+  "org": "Braemar Aviation",
+  "null_speaker": false,
+  "true_signal_strength": 0.066,
+  "n_baseline": 7,
+  "n_constrained": 2
+ },
+ {
+  "speaker": "C. Mbeki",
+  "org": "Tessaly Biosciences",
+  "null_speaker": false,
+  "true_signal_strength": 0.137,
+  "n_baseline": 7,
+  "n_constrained": 4
+ },
+ {
+  "speaker": "V. Ivanova",
+  "org": "Nordvik Marine",
+  "null_speaker": false,
+  "true_signal_strength": 0.348,
+  "n_baseline": 6,
+  "n_constrained": 2
+ }
+]
